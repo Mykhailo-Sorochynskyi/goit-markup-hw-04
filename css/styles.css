@@ -1,0 +1,326 @@
+/*#region General*/
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+
+img{display: block;}
+  /*#region Reset*/
+  ul,
+  ol,
+  h2,
+  h3,
+  p,
+  a {
+    margin: 0;
+    padding: 0;
+  }
+  ul,
+  ol {
+    list-style-type: none;
+  }
+  /*#endregion Reset*/
+
+  /*#region H2,H3,A,P STYLES*/
+  a {
+    text-decoration: none;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+  /*#endregion H2,H3,A,P STYLES*/
+  .container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  /*#endregion General*/
+
+  /*#region header*/
+  .header {
+    border-bottom: 1px solid #e7e9fc;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  /*#region nav*/
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .header-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    padding: 24px 0;
+    margin-right: 76px;
+  }
+  .span-header-logo {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2e2f42;
+  }
+  .menu-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .menu-list-item {
+  }
+  .menu-link {
+    display: block;
+    padding: 24px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
+  .menu-link:hover,
+  .menu-link:focus {
+    color: #404bbf;
+  }
+  .menu-link:active {
+    color: #404bbf;
+  }
+  /*#endregion nav*/
+
+  /*#region adres*/
+  .address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-left: auto;
+  }
+  .adress-list {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    gap: 40px;
+  }
+  .adress-list-item {
+  }
+  .adress-link {
+    color: #434455;
+  }
+  .adress-link:hover,
+  .adress-link:focus {
+    color: #404bbf;
+  }
+  /*#endregion adres*/
+  /*#endregion header*/
+
+  /*#region main*/
+  /*#region head text page*/
+  .container-hero {
+  }
+
+  .head-text-page {
+    background: #2e2f42;
+    padding: 188px 0;
+  }
+  .head-text-page-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+  }
+  .order-service-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background-color: #4d5ae5;
+    cursor: pointer;
+    min-width: 169px;
+    min-height: 56px;
+    border-radius: 4px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .order-service-btn:hover,
+  .order-service-btn:focus {
+    background-color: #404bbf;
+  }
+
+  /*#endregion head text page*/
+
+  /*#region What describes us*/
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .hero-list {
+    display: flex;
+    gap: 24px;
+  }
+  .hero-list-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    width: calc((100% - 3 * 24px) / 4);
+  }
+
+  .hero-list-title {
+    margin-bottom: 8px;
+  }
+  .hero-list-text {
+  }
+  /*#endregion What describes us*/
+
+  /*#region our team*/
+  .our-team {
+    background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .our-team-title {
+    line-height: 1.11;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+  }
+  .team-list {
+    display: flex;
+    gap: 24px;
+  }
+  .team-list-item {
+    background-color: #ffffff;
+    width: calc((100% - 3 * 24px) / 4);
+    border-radius: 0 0 4px 4px;
+  }
+  .team-list-item-title {
+    margin-bottom: 8px;
+  }
+  .team-box {
+    padding: 32px 0;
+    text-align: center;
+  }
+  .team-img {
+  }
+  /*#endregion our team*/
+
+  /*#region our portfolio*/
+  .portfolio {
+    color: #2e2f42;
+    text-transform: capitalize;
+    background-color: #ffffff;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .portfolio-title {
+    line-height: 1.11;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+  }
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+  }
+  .portfolio-list-item {
+    background-color: #ffffff;
+    width: calc((100% - 24 * 2) / 3);
+  }
+.portfolio-img {
+  display: block;
+}
+.portfolio-list-item-title {
+  margin-bottom: 8px;
+}
+.portfolio-list-item-text {
+}
+.portfolio-box {
+  text-align: center;
+  padding: 32px 16px;
+  
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+/*#endregion our portfolio*/
+
+/*#endregion main*/
+
+/*#region footer*/
+.footer {
+  background: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-logo {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  color: #4d5ae5;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.span-footer {
+  color: #f4f4fd;
+}
+.text-footer {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  max-width: 264px;
+}
+/*#endregion footer*/
